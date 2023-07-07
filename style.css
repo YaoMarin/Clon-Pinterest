@@ -1,0 +1,126 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yantramanav', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+    scroll-snap-align: center;
+    height: 650px;
+}
+
+section h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+section img{
+    height: 60%;
+}
+
+section:nth-child(2){
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+section:nth-child(3){
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd2f4 100%);
+}
+
+section:nth-child(4){
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+
+section:nth-child(5){
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);} 
+
+section a{
+    display: block;
+    padding: 7px 0;
+    color: #283773;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+    scroll-snap-align: start;
+}
+
+.Logo{
+    height: 70px;
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    padding: 20px;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.Iniciar{
+    background-color: rgb(218, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Registrate{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Iniciar:hover{
+    background-color: rgb(184, 0, 0);
+}
+
+.Registrate:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    section img{
+        width: 60%;        
+    }
+}
